@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Enter Credit Card Number"
+        android:inputType="number"
+        android:drawableStart="@drawable/credit_card_light"
+        android:background="@drawable/my_shape"/>
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/editTextNumber"
+        android:layout_marginTop="100dp"
+        android:hint="Please Enter User Name"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:drawableStart="@drawable/person_light"
+        android:background="@drawable/my_shape"/>
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_alignEnd="@id/editTextNumber2"
+        android:hint="CCV"
+        android:inputType="number"
+        android:drawableStart="@drawable/pin_light"
+        android:background="@drawable/my_shape"/>
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Date"
+        android:layout_below="@id/editTextNumber2"
+        android:layout_marginTop="100dp"
+        android:layout_alignStart="@id/editTextNumber2"
+        android:inputType="date"
+        android:drawableStart="@drawable/calendar_month_light"
+        android:background="@drawable/my_shape"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Payment"
+        android:layout_below="@id/editTextDate"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="#3F51B5"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>
